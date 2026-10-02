@@ -1,0 +1,10 @@
+* { box-sizing: border-box; }
+body { margin: 0; color: #222; background: #fff; font-family: Arial, sans-serif; }
+button { font: inherit; }
+.portfolio { width: min(100% - 40px, 900px); margin: 36px auto; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
+.filter { padding: 9px 17px; border: 1px solid #555; background: #fff; cursor: pointer; transition: .15s ease; }
+.filter:hover, .filter--selected { color: #fff; background: #555; }
+.project-list { columns: 3 260px; column-gap: 18px; }
+.project { display: block; width: 100%; margin: 0 0 18px; break-inside: avoid; background: #f4f4f4; }
+@media (max-width: 620px) { .portfolio { width: min(100% - 24px, 900px); margin-top: 20px; } .project-list { columns: 2 140px; } }
